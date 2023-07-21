@@ -18,3 +18,7 @@ export default {
     }),
   ],
 }
+
+export default {
+  base: '/portfolio/'
+}
