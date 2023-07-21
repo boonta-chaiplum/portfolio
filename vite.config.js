@@ -1,8 +1,10 @@
 const path = require('path')
 import handlebars from 'vite-plugin-handlebars';
 
+const base = '/portfolio/'
+
 export default {
-  base: '/portfolio/',
+  base,
   root: path.resolve(__dirname, 'src'),
   resolve: {
     alias: {
@@ -16,6 +18,9 @@ export default {
   plugins: [
     handlebars({
       partialDirectory: path.resolve(__dirname, 'src/partials'),
+      helpers: {
+        basePath: (value) => path.join(base, value),
+      },
     }),
   ],
 }
