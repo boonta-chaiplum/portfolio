@@ -25,6 +25,7 @@ export default defineConfig({
         project_2: path.resolve(__dirname, 'src/project-2.html'),
         project_3: path.resolve(__dirname, 'src/project-3.html'),
         project_4: path.resolve(__dirname, 'src/project-4.html'),
+        project_5: path.resolve(__dirname, 'src/project-5.html'),
       },
     },
   },
