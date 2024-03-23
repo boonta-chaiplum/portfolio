@@ -2,7 +2,7 @@ const path = require('path')
 import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
 
-const base = '/portfolio/'
+const base = '/'
 
 export default defineConfig({
   base,
@@ -38,3 +38,5 @@ export default defineConfig({
     }),
   ],
 })
+
+
