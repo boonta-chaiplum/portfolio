@@ -1,16 +1,20 @@
-<nav class="navbar sticky-top navbar-expand-xl py-2 bg-transparent-xl" id="navbar">
-    <div class="container">
-        <div class="d-flex d-xl-none">
-            <a class="navbar-brand" href="{{basePath "/"}}">BOONTA CHAIPLUM</a>
-        </div>
+<nav class="navbar fixed-top-lg navbar-expand-xl py-lg-2 py-4 navbar-backdrop z-5" id="navbar">
+    <div class="container-fluid mx-5 px-5">
+        {{!-- <div class="d-flex d-xl-none">
+            <a class="navbar-brand" href="{{basePath " /"}}">BOONTA CHAIPLUM</a>
+        </div> --}}
         <div class="d-none d-xl-flex align-items-center" style="opacity: 1;">
-            {{!-- <a><img src="img/bc-design.png" style="width:10rem;"></a> --}}
-            <a class="navbar-brand" href="{{basePath "/"}}">BOONTA</a>
+            <a class="navbar-brand" href="{{basePath " /"}}">Boonta Chaiplum</a>
+
         </div>
-        <div class="d-flex">
+        <div class="d-flex position-absolute logo">
+            <a href="boonta.space"><img id="logo" src="/img/BC Logo.svg" style="width: 2rem; filter: invert(100%);"></a>
+
+        </div>
+        <div class="d-flex position-absolute" style="right: 2.5%;" >
             <button class="navbar-toggler p-0" style="border: none;" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon bi bi-list"></span>
+                <span class="navbar-toggler-icon bi bi-list" style="color: white;"></span>
             </button>
         </div>
 
@@ -23,30 +27,32 @@
             <div class="offcanvas-body align-items-xl-center justify-content-center">
                 <div class="d-grid d-xl-none px-0 py-2">
                     <a class="d-flex d-xl-none py-xl-0 py-2 justify-content-center btn btn-outline-dark border border-dark border-2 rounded-5"
-                            href="{{basePath "/"}}">Home</a>
+                        href="{{basePath " /"}}">Home</a>
                 </div>
                 <ul class="navbar-nav me-xl-3 ms-xl-auto">
                     <li class="nav-item py-2">
                         <div class="d-none d-xl-flex py-xl-0 py-2 justify-content-center">
-                            <a class="navlink" href="{{basePath "/#Work"}}">Work</a>
+                            <a class="navlink" href="{{basePath " /#Work"}}">Work</a>
                         </div>
-                        <a class="d-flex d-xl-none py-xl-0 py-2 justify-content-center btn btn-outline-dark border border-dark border-2 rounded-5" 
-                           id="Work-2-link" href="{{basePath "/#Work-2"}}">Work</a>
-                        
+                        <a class="d-flex d-xl-none py-xl-0 py-2 justify-content-center btn btn-outline-dark border border-dark border-2 rounded-5"
+                            id="Work-2-link" href="{{basePath " /#Work-2"}}">Work</a>
+
                     </li>
                     <li class="nav-item me-xl-4 ms-xl-5 py-2">
                         <div class="d-none d-xl-flex justify-content-center">
-                            <a class="navlink" href="{{basePath "/about.html"}}">About</a>
+                            <a class="navlink" href="{{basePath " /about.html"}}">About</a>
                         </div>
                         <a class="d-flex d-xl-none py-xl-0 py-2 justify-content-center btn btn-outline-dark border border-dark border-2 rounded-5"
-                            href="{{basePath "/about.html"}}">About</a>
+                            href="{{basePath " /about.html"}}">About</a>
                     </li>
                 </ul>
                 <div class="d-grid px-0 py-2">
                     <a class="d-flex d-xl-none py-xl-0 py-2 justify-content-center btn btn-outline-dark border border-dark border-2 rounded-5"
-                            href="https://www.linkedin.com/in/boonta-chaiplum/">Linkedin</a>
-                    <a class="btn btn-xprimary rounded-5 px-3 a-contact mt-xl-0 mt-5"
-                        href="mailto:hello@boonta.space">CONTACT</a>
+                        href="https://www.linkedin.com/in/boonta-chaiplum/">Linkedin</a>
+                    <a class="btn btn-color d-none d-xl-flex rounded-5 px-3 a-contact mt-xl-0 mt-5 z-2"
+                        href="mailto:hello@boonta.space">Contact</a>
+                    <a class="btn d-xl-none d-flex btn-outline-dark border border-dark border-2 rounded-5 py-2 px-3 justify-content-center  mt-xl-0 mt-5 z-2"
+                        href="mailto:hello@boonta.space">Contact</a>
                 </div>
             </div>
         </div>

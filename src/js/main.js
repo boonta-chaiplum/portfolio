@@ -8,6 +8,8 @@ import { Tooltip, Toast, Popover } from 'bootstrap';
 
 const navEl = document.querySelector('.navbar');
 
+const stickyEl = document.querySelector('.sticky-opacity')
+
 const displayEl = document.querySelector('#display')
 
 const displaybodyEl = document.querySelector('#display-body')
@@ -15,18 +17,21 @@ const displaybodyEl = document.querySelector('#display-body')
 window.addEventListener('scroll', () => {
     if(window.outerWidth >= 0){
 
-        if (window.scrollY >= 58) {
-            navEl.classList.remove('bg-transparent-xl');
-            navEl.classList.add('border-bottom');
+        if (window.scrollY >= 60) {
+            navEl.classList.remove();
+            navEl.classList.add('navbar-backdrop');
+            stickyEl.classList.add('sticky-opacity-none');
+
         
         
         
-        } else if (window.scrollY < 50) {
-            navEl.classList.add('bg-transparent-xl');
-            navEl.classList.remove('border-bottom');
+        } else if (window.scrollY < 59) {
+            navEl.classList.add();
+            navEl.classList.remove('navbar-backdrop');
+            stickyEl.classList.remove('sticky-opacity-none');
         }
         
-        // displayEl.style.opacity = Math.max(5, 100 - window.scrollY) / 100;
+       stickyEl.style.opacity = Math.max(100 - window.scrollY) / 100;
     }
 
 });
