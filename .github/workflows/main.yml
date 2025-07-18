@@ -36,7 +36,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # Replace this with your build output folder
+          path: ./src/dist  # Replace this with your build output folder
 
   deploy:
     needs: build
